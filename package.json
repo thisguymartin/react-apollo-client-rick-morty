@@ -1,6 +1,6 @@
 {
   "name": "rick-and-morty",
-  "version": "0.1.0",
+  "version": "10.0.0",
   "private": true,
   "dependencies": {
     "apollo-boost": "^0.4.4",
@@ -23,7 +23,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run prettier"
+      "pre-commit": "npm run pretty"
     }
   },
   "lint-staged": {
