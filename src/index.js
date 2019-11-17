@@ -7,8 +7,7 @@ import ApolloClient from "apollo-boost";
 import { ApolloProvider } from "react-apollo";
 import RouterC from "./router";
 
-import history from './history'
-
+import history from "./history";
 
 const client = new ApolloClient({
     //URL of the GraphQL server for rick and morty graphql
@@ -17,7 +16,7 @@ const client = new ApolloClient({
 
 ReactDOM.render(
     <ApolloProvider client={client}>
-        <RouterC history={history}/>
+        <RouterC history={history} />
     </ApolloProvider>,
     document.getElementById("root")
 );

@@ -1,10 +1,10 @@
-import React from "react"
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom"
+import React from "react";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
-import Home from "./pages/home"
-import Movies from "./pages/movies"
+import Home from "./pages/home";
+import Movies from "./pages/movies";
 
-const RouterComponent = (props) => (
+const RouterComponent = props => (
     <Router history={props.history}>
         <Switch>
             <Route exact path="/">
@@ -18,6 +18,6 @@ const RouterComponent = (props) => (
             </Route>
         </Switch>
     </Router>
-)
+);
 
 export default RouterComponent;

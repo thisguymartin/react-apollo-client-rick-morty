@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 
-const HomeForm = (props) => {
-    const [name, setName] = useState("")
+const HomeForm = props => {
+    const [name, setName] = useState("");
 
-    const RouteCharacters = (d) => {
-            
-            console.log(props)
-    }
+    const RouteCharacters = d => {
+        console.log(props);
+    };
 
     return (
         <div className="container flex items-center justify-center h-32">
@@ -17,12 +16,15 @@ const HomeForm = (props) => {
                     placeholder="Add your name homie!"
                     onChange={e => setName(e.target.value)}
                 ></input>
-                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4" onClick={RouteCharacters}>
+                <button
+                    className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4"
+                    onClick={RouteCharacters}
+                >
                     Button
                 </button>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default HomeForm;
