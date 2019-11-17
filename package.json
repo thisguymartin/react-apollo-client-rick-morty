@@ -18,7 +18,19 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "build:style":"tailwind build src/styles/index.css -o src/styles/tailwind.css"
+    "build:style": "tailwind build src/styles/index.css -o src/styles/tailwind.css",
+    "pretty": "prettier --write --tab-width 4 \"src/**/*.js\""
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run prettier"
+    }
+  },
+  "lint-staged": {
+    "linters": {
+      "src/**/*.{js,css}": ["prettier --write", "git add"]
+    },
+    "ignore": ["node_modules", "dist", "package-lock.json"]
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -36,6 +48,10 @@
     ]
   },
   "devDependencies": {
+    "husky": "^3.0.9",
+    "lint-staged": "^9.4.3",
+    "prettier": "^1.19.1",
+    "pretty-quick": "^2.0.1",
     "tailwindcss": "^1.1.3"
   }
 }
