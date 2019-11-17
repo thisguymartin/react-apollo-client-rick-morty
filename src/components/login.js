@@ -2,6 +2,9 @@ import React, {useState} from 'react'
 import {useMutation} from 'react-apollo'
 import {gql} from 'apollo-boost'
 
+
+
+
 const LOGIN_MUTATION = gql`
   mutation userLogin($email: String!, $password: String!) {
     userLogin(email: $email, password: $password) {
@@ -59,6 +62,10 @@ const LOGIN_MUTATION = gql`
             Sign In
           </button>
         </div>
+
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+  Button
+</button>
       </form>
     )
 }
