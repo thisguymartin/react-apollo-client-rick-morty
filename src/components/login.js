@@ -53,14 +53,12 @@ function MutationWithHook() {
                 onChange={e => setPassword(e.target.value)}
                 required
             />
-
             <div className="form-group my-4">
                 <button className="btn btn-block" type="submit">
                     Sign In
                 </button>
             </div>
-
-            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                 Button
             </button>
         </form>

@@ -8,10 +8,10 @@ const RouterComponent = props => (
     <Router history={props.history}>
         <Switch>
             <Route exact path="/">
-                <Home />
+                <Home props={props} />
             </Route>
             <Route exact path="/movies">
-                <Movies />
+                <Movies props={props} />
             </Route>
             <Route exact path="/movies/:id">
                 <h1>Movie goes here</h1>
